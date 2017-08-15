@@ -11,7 +11,7 @@ How to set up the bot.
 7. copy FindMethod.gs into findMethod.gs
 8. create new script file (tep 4) and name it findNameMethod
 9. copy FindNameMethod.gs into FindNameMethod.gs
-10. Create a new spread sheet in google drive and copy the format posted 
+10. Create a new spread sheet in google drive and copy the format posted in points.xslx
 11. fill in your information
 12. click on constants.gs and update the section that says //CHANGE THIS
       You will need to update the address for your spreadsheet, 
