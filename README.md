@@ -28,6 +28,7 @@ How to set up the bot.
 20. Name the bot and paste the copied link from step 15 and submit
 21. Copy the bot ID and paste into the bot ID section in constants.gs (Must be in quotes)
 22. Publish the app again (step 15,16)
+23. Test bot in group me, making sure to verify it worked on the google spreadsheet
 
 
-Now you should be set up. If it isnt working, email me.
+Now you should be set up. If it isn't working, message me.
