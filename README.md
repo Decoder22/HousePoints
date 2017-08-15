@@ -4,13 +4,13 @@ How to set up the bot.
 
 1. Go to https://www.google.com/script/start/ and click start scripting
 2. Name your project
-3. Copy code into Code.gs
+3. Copy Code.gs on github into Code.gs in Google Scripts
 4. click file -> new -> script file and name it constants
-5. copy code into constants.gs
+5. Copy Constants.gs on github into constants.gs in Google Scripts
 6. create new script file (step 4) and name it findMethod
-7. copy code into findMethod.gs
+7. copy FindMethod.gs into findMethod.gs
 8. create new script file (tep 4) and name it findNameMethod
-9. copy code into findNameMethod.gs
+9. copy FindNameMethod.gs into FindNameMethod.gs
 10. Create a new spread sheet in google drive and copy the format posted 
 11. fill in your information
 12. click on constants.gs and update the section that says //CHANGE THIS
