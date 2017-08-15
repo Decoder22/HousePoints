@@ -4,7 +4,7 @@
 
 
 // sharing adress for the google drive spread sheet
-var sheet = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1ZNq0dDNbUW50SB1826KVqNNTsLx-YdEolkuaUh8ar-I/edit?usp=sharing');
+var sheet = SpreadsheetApp.openByUrl('House spreadsheet url');
 
 //first row that has information on north residence
 var startN = 1;
