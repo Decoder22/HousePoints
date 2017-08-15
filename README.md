@@ -17,7 +17,7 @@ How to set up the bot.
       You will need to update the address for your spreadsheet, 
       Starting and ending row for houses and the abreviations for your floors
 13. Click on "Select Function" on the top bar and choose "test" from the drop down Menu
-14. Click the play button. If Google asks permission, choose advanced options and click through to give permissions. If cell D2 has a value 1, it works.
+14. Click the play button. If Google asks permission, choose advanced options and click through to give permissions. If cell D2 on your spreadsheet has a value 1, it works.
 13. Save the code and click publish -> publish as web app 
 14. Fill in information in publish form. (when updating the code, you will need to republish the code. Choose a new project version and comment on changes)
 15. Save the app URL (copy and write down somewhere)
