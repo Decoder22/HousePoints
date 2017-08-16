@@ -47,6 +47,9 @@ function doPost(e) {
     else if(message[0] == "!ways"){
       postPointWays();
     }
+    else if(message[0] == "!help"){
+      help();
+    }
     else{
       sendText("Unkown command");
     }
@@ -124,5 +127,29 @@ function postPointWays(){
   for(var i = 0; i < pointWays.length; i++){
     msg = msg + (i+1) + ". "+pointWays[i] + "\\n";
   }
-  Logger.log(msg);
+  sendText(msg);
+}
+
+
+function help(){
+  helpWithPointName();
+  helpWithPointRoom();
+  helpWithWays();
+}
+
+function helpWithPointName(){
+  sendText("HELP\\n\\n!point <First> <Last> <Type>\\n\\n!point - The command that adds points to a resident.\\n\
+<First> - The first name of the resident.\\n<Last> - The last name of the resident.\\n\
+<Type> - a number 1-20 that represents the reason that they are getting points. \
+Type !ways to see the reasons and their corresponding ids.");
+}
+function helpWithPointRoom(){
+  sendText("HELP\\n\\n!point <Room> <Type>\\n\\n!point - The command that adds points to a resident.\\n\
+<Room> - The room number in the format N1XXXa or S1XXXXa where XXXX is the 4 digit room number and a is their location in room.\\n\
+<Type> - a number 1-20 that represents the reason that they are getting points. \
+Type !ways to see the reasons and their corresponding ids.");
+}
+
+function helpWithWays(){
+  sendText("HELP\\n\\n!ways \\n\\n This command lists the ways to earn points as well as the ID number that matches. Use the id number when giving points with !point.");
 }
