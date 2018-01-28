@@ -1,6 +1,6 @@
 //where is a string in the format "N4XXXa" or "S4XXXa"
+// return int
 function findWithNumber(where) {
-  Logger.log("Where: "+where);
   var floor = where.split('')[0];
   if(floor == 'N'){
      return findNorthNum(where);
@@ -18,8 +18,18 @@ function findWithNumber(where) {
 
 //gets the data
 function getData(loc){
-  val = sheet.getRange(loc).getValue()
-  return ""+ val
+  var letter = String(loc.match("[A-Z]*"));
+  var num = parseInt(loc.match("[0-9]+"));
+  if (dataSheet == null){
+    dataSheet = sheet.getSheetValues(1,1,numberOfResidents,numOfCat);
+  }
+  var pos = letter.charCodeAt(0) - "A".charCodeAt(0);
+  if(letter.length > 1){
+   pos = 26 + letter.charCodeAt(1) -"A".charCodeAt(0); 
+  }
+  Logger.log(num+" "+pos);
+  return ""+ dataSheet[num-1][pos];
+  
 }
 
 
@@ -46,6 +56,7 @@ function compareNumber(where, found){
   }
 }
 
+//Returns integer of row
 function findNorthNum(where){
   var i = 2;
   var comp = 0
@@ -61,6 +72,8 @@ function findNorthNum(where){
   return -1;
   
 }
+
+//returns integer of row
 function findSouthNum(where){
   var i = startS;
   for(i; i < (endS + 1); i++){
